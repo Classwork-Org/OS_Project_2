@@ -27,7 +27,7 @@ int simple_init(void)
 
 void simple_exit(void)
 {
-	printk(KERN_INFO "removing module and saving output to output.txt\n");
+	printk(KERN_INFO "removing module\n");
 }
 
 module_init(simple_init);
