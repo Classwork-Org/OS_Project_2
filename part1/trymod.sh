@@ -1,3 +1,4 @@
+set -e;
 make;
 dmesg -C;
 insmod simple.ko;
