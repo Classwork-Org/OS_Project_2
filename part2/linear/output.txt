@@ -1,0 +1,12 @@
+[ 3383.064234] loading module 
+[ 3383.064237] added day 1
+[ 3383.064238] added day 2
+[ 3383.064239] added day 3
+[ 3383.064239] added day 4
+[ 3383.064240] added day 5
+[ 3383.065315] removing module
+[ 3383.065316] removing birthday 1
+[ 3383.065317] removing birthday 2
+[ 3383.065318] removing birthday 3
+[ 3383.065318] removing birthday 4
+[ 3383.065319] removing birthday 5

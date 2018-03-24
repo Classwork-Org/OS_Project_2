@@ -7,30 +7,27 @@ struct task_struct *task;
 struct task_struct *out;
 struct list_head *list;
 
+void dfs_process_tree(struct task_struct *next)
+{
+	struct task_struct *child;
+	struct list_head *ptr;
+	printk(KERN_INFO "pid: %d, parent_pid: %d, name: %s, state: %ld", next->pid, next->real_parent->pid, next->comm, next->state);
+	list_for_each(ptr, &next->children){
+		child = list_entry(ptr, struct task_struct, sibling);
+		dfs_process_tree(child);
+	}
+}
+
 int simple_init(void)
 {
-	int i = 0;
-	printk(KERN_INFO "loading module \n");
-	printk(KERN_INFO "Process Name %s\n", task->comm);
-
-	list_for_each(list,&(init_task.children)){
-		task = list_entry(list, struct task_struct, sibling);
-		printk(KERN_INFO "Process Name %s\n", task->comm);
-		if (i>10)
-		{
-			break;
-		}
-		else
-		{
-			i++;
-		}
-	}
+	printk(KERN_INFO "starting process tree print\n");
+	dfs_process_tree(&init_task);
 	return 0;
 }
 
 void simple_exit(void)
 {
-	printk(KERN_INFO "removing module\n");
+	printk(KERN_INFO "removing module and saving output to output.txt\n");
 }
 
 module_init(simple_init);
