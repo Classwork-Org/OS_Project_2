@@ -32,5 +32,5 @@ make clean;
 printf "done\n\n"
 
 printf "running match script\n";	
-python matchout.py;
+./tre/bin/python matchout.py;
 printf "trymod complete \n"
