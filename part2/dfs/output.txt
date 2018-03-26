@@ -1,200 +1,200 @@
-[ 7516.576732] starting process tree print
-[ 7516.576735] pid: 0, parent_pid: 0, name: swapper/0, state: 0
-[ 7516.576737] pid: 1, parent_pid: 0, name: systemd, state: 1
-[ 7516.576738] pid: 223, parent_pid: 1, name: systemd-journal, state: 1
-[ 7516.576739] pid: 242, parent_pid: 1, name: systemd-udevd, state: 1
-[ 7516.576740] pid: 12569, parent_pid: 242, name: systemd-udevd, state: 1
-[ 7516.576741] pid: 310, parent_pid: 1, name: systemd-timesyn, state: 1
-[ 7516.576742] pid: 467, parent_pid: 1, name: rpcbind, state: 1
-[ 7516.576743] pid: 476, parent_pid: 1, name: rpc.statd, state: 1
-[ 7516.576744] pid: 490, parent_pid: 1, name: rpc.idmapd, state: 1
-[ 7516.576745] pid: 492, parent_pid: 1, name: accounts-daemon, state: 1
-[ 7516.576746] pid: 493, parent_pid: 1, name: cron, state: 1
-[ 7516.576747] pid: 494, parent_pid: 1, name: ModemManager, state: 1
-[ 7516.576748] pid: 495, parent_pid: 1, name: rsyslogd, state: 1
-[ 7516.576749] pid: 496, parent_pid: 1, name: avahi-daemon, state: 1
-[ 7516.576750] pid: 510, parent_pid: 496, name: avahi-daemon, state: 1
-[ 7516.576750] pid: 498, parent_pid: 1, name: NetworkManager, state: 1
-[ 7516.576751] pid: 610, parent_pid: 498, name: dhclient, state: 1
-[ 7516.576752] pid: 501, parent_pid: 1, name: atd, state: 1
-[ 7516.576753] pid: 504, parent_pid: 1, name: dbus-daemon, state: 1
-[ 7516.576754] pid: 527, parent_pid: 1, name: systemd-logind, state: 1
-[ 7516.576755] pid: 536, parent_pid: 1, name: acpid, state: 1
-[ 7516.576756] pid: 541, parent_pid: 1, name: cupsd, state: 1
-[ 7516.576757] pid: 542, parent_pid: 1, name: cups-browsed, state: 1
-[ 7516.576758] pid: 546, parent_pid: 1, name: sshd, state: 1
-[ 7516.576759] pid: 551, parent_pid: 1, name: minissdpd, state: 1
-[ 7516.576759] pid: 553, parent_pid: 1, name: polkitd, state: 1
-[ 7516.576761] pid: 555, parent_pid: 1, name: agetty, state: 1
-[ 7516.576851] pid: 561, parent_pid: 1, name: gdm3, state: 1
-[ 7516.576853] pid: 595, parent_pid: 561, name: Xorg, state: 1
-[ 7516.576854] pid: 1009, parent_pid: 561, name: gdm-session-wor, state: 1
-[ 7516.576855] pid: 1023, parent_pid: 1009, name: x-session-manag, state: 1
-[ 7516.576856] pid: 1060, parent_pid: 1023, name: ssh-agent, state: 1
-[ 7516.576857] pid: 1087, parent_pid: 1023, name: gnome-settings-, state: 1
-[ 7516.576858] pid: 1162, parent_pid: 1023, name: gnome-shell, state: 0
-[ 7516.576859] pid: 1198, parent_pid: 1023, name: evolution-alarm, state: 1
-[ 7516.576859] pid: 1199, parent_pid: 1023, name: nm-applet, state: 1
-[ 7516.576860] pid: 1201, parent_pid: 1023, name: tracker-miner-u, state: 1
-[ 7516.576861] pid: 1203, parent_pid: 1023, name: nautilus, state: 1
-[ 7516.576862] pid: 1206, parent_pid: 1023, name: tracker-extract, state: 0
-[ 7516.576863] pid: 1210, parent_pid: 1023, name: zeitgeist-datah, state: 1
-[ 7516.576864] pid: 1211, parent_pid: 1023, name: tracker-miner-f, state: 0
-[ 7516.576864] pid: 1212, parent_pid: 1023, name: tracker-miner-a, state: 1
-[ 7516.576865] pid: 1215, parent_pid: 1023, name: applet.py, state: 1
-[ 7516.576866] pid: 871, parent_pid: 1, name: exim4, state: 1
-[ 7516.576867] pid: 936, parent_pid: 1, name: upowerd, state: 1
-[ 7516.576868] pid: 954, parent_pid: 1, name: colord, state: 1
-[ 7516.576869] pid: 962, parent_pid: 1, name: rtkit-daemon, state: 1
-[ 7516.576870] pid: 989, parent_pid: 1, name: wpa_supplicant, state: 1
-[ 7516.576871] pid: 992, parent_pid: 1, name: packagekitd, state: 1
-[ 7516.576872] pid: 1015, parent_pid: 1, name: systemd, state: 1
-[ 7516.576872] pid: 1016, parent_pid: 1015, name: (sd-pam), state: 1
-[ 7516.576873] pid: 1020, parent_pid: 1, name: gnome-keyring-d, state: 1
-[ 7516.576874] pid: 1064, parent_pid: 1, name: dbus-daemon, state: 1
-[ 7516.576875] pid: 1063, parent_pid: 1, name: dbus-launch, state: 1
-[ 7516.576876] pid: 1067, parent_pid: 1, name: at-spi-bus-laun, state: 1
-[ 7516.576877] pid: 1071, parent_pid: 1067, name: dbus-daemon, state: 1
-[ 7516.576878] pid: 1075, parent_pid: 1, name: at-spi2-registr, state: 1
-[ 7516.576878] pid: 1102, parent_pid: 1, name: pulseaudio, state: 1
-[ 7516.576879] pid: 1106, parent_pid: 1, name: gvfsd, state: 1
-[ 7516.576880] pid: 1112, parent_pid: 1, name: start-pulseaudi, state: 1
-[ 7516.576881] pid: 1113, parent_pid: 1112, name: xprop, state: 1
-[ 7516.576881] pid: 1115, parent_pid: 1, name: gvfsd-fuse, state: 1
-[ 7516.576882] pid: 1125, parent_pid: 1, name: udisksd, state: 1
-[ 7516.576883] pid: 1123, parent_pid: 1, name: gvfs-udisks2-vo, state: 1
-[ 7516.576884] pid: 1137, parent_pid: 1, name: goa-daemon, state: 1
-[ 7516.576884] pid: 1134, parent_pid: 1, name: gvfs-goa-volume, state: 1
-[ 7516.576885] pid: 1147, parent_pid: 1, name: gvfs-gphoto2-vo, state: 1
-[ 7516.576886] pid: 1151, parent_pid: 1, name: gvfs-mtp-volume, state: 1
-[ 7516.576887] pid: 1155, parent_pid: 1, name: gvfs-afc-volume, state: 1
-[ 7516.576887] pid: 1145, parent_pid: 1, name: mission-control, state: 1
-[ 7516.576888] pid: 1166, parent_pid: 1, name: gsd-printer, state: 1
-[ 7516.576889] pid: 1185, parent_pid: 1, name: evolution-sourc, state: 1
-[ 7516.576890] pid: 1181, parent_pid: 1, name: gnome-shell-cal, state: 1
-[ 7516.576890] pid: 1207, parent_pid: 1, name: tracker-store, state: 1
-[ 7516.576891] pid: 1231, parent_pid: 1, name: gconfd-2, state: 1
-[ 7516.576892] pid: 1217, parent_pid: 1, name: zeitgeist-daemo, state: 1
-[ 7516.576893] pid: 1243, parent_pid: 1, name: zeitgeist-fts, state: 1
-[ 7516.576894] pid: 1258, parent_pid: 1243, name: cat, state: 1
-[ 7516.576895] pid: 1273, parent_pid: 1, name: gvfsd-trash, state: 1
-[ 7516.576896] pid: 1291, parent_pid: 1, name: gvfsd-metadata, state: 1
-[ 7516.576897] pid: 1295, parent_pid: 1, name: gvfsd-burn, state: 1
-[ 7516.576897] pid: 1252, parent_pid: 1, name: evolution-calen, state: 1
-[ 7516.576898] pid: 1345, parent_pid: 1, name: dconf-service, state: 1
-[ 7516.576899] pid: 1378, parent_pid: 1, name: gvfsd-network, state: 1
-[ 7516.576900] pid: 1390, parent_pid: 1, name: gvfsd-dnssd, state: 1
-[ 7516.576925] pid: 1422, parent_pid: 1, name: gnome-terminal-, state: 1
-[ 7516.576926] pid: 1425, parent_pid: 1422, name: gnome-pty-helpe, state: 1
-[ 7516.576927] pid: 1426, parent_pid: 1422, name: bash, state: 1
-[ 7516.576928] pid: 1490, parent_pid: 1426, name: su, state: 1
-[ 7516.576929] pid: 1491, parent_pid: 1490, name: bash, state: 1
-[ 7516.576930] pid: 12256, parent_pid: 1491, name: bash, state: 1
-[ 7516.576930] pid: 13118, parent_pid: 12256, name: insmod, state: 0
-[ 7516.576931] pid: 7484, parent_pid: 1, name: sublime_text, state: 1
-[ 7516.576932] pid: 7494, parent_pid: 7484, name: plugin_host, state: 1
-[ 7516.576933] pid: 2, parent_pid: 0, name: kthreadd, state: 1
-[ 7516.576934] pid: 3, parent_pid: 2, name: ksoftirqd/0, state: 1
-[ 7516.576935] pid: 5, parent_pid: 2, name: kworker/0:0H, state: 1
-[ 7516.576935] pid: 7, parent_pid: 2, name: rcu_sched, state: 1
-[ 7516.576936] pid: 8, parent_pid: 2, name: rcu_bh, state: 1
-[ 7516.576937] pid: 9, parent_pid: 2, name: migration/0, state: 1
-[ 7516.576938] pid: 10, parent_pid: 2, name: watchdog/0, state: 1
-[ 7516.576939] pid: 11, parent_pid: 2, name: khelper, state: 1
-[ 7516.576939] pid: 12, parent_pid: 2, name: kdevtmpfs, state: 1
-[ 7516.576940] pid: 13, parent_pid: 2, name: netns, state: 1
-[ 7516.576941] pid: 14, parent_pid: 2, name: khungtaskd, state: 1
-[ 7516.576942] pid: 15, parent_pid: 2, name: writeback, state: 1
-[ 7516.576943] pid: 16, parent_pid: 2, name: ksmd, state: 1
-[ 7516.576943] pid: 17, parent_pid: 2, name: khugepaged, state: 1
-[ 7516.576944] pid: 18, parent_pid: 2, name: crypto, state: 1
-[ 7516.576945] pid: 19, parent_pid: 2, name: kintegrityd, state: 1
-[ 7516.576946] pid: 20, parent_pid: 2, name: bioset, state: 1
-[ 7516.576946] pid: 21, parent_pid: 2, name: kblockd, state: 1
-[ 7516.576947] pid: 23, parent_pid: 2, name: kswapd0, state: 1
-[ 7516.576948] pid: 24, parent_pid: 2, name: vmstat, state: 1
-[ 7516.576949] pid: 25, parent_pid: 2, name: fsnotify_mark, state: 1
-[ 7516.576950] pid: 31, parent_pid: 2, name: kthrotld, state: 1
-[ 7516.576951] pid: 32, parent_pid: 2, name: ipv6_addrconf, state: 1
-[ 7516.576951] pid: 33, parent_pid: 2, name: deferwq, state: 1
-[ 7516.576952] pid: 68, parent_pid: 2, name: ata_sff, state: 1
-[ 7516.576953] pid: 69, parent_pid: 2, name: scsi_eh_0, state: 1
-[ 7516.576954] pid: 70, parent_pid: 2, name: scsi_tmf_0, state: 1
-[ 7516.576954] pid: 71, parent_pid: 2, name: scsi_eh_1, state: 1
-[ 7516.576955] pid: 72, parent_pid: 2, name: scsi_tmf_1, state: 1
-[ 7516.576956] pid: 75, parent_pid: 2, name: khubd, state: 1
-[ 7516.576957] pid: 76, parent_pid: 2, name: kpsmoused, state: 1
-[ 7516.576958] pid: 78, parent_pid: 2, name: scsi_eh_2, state: 1
-[ 7516.576958] pid: 79, parent_pid: 2, name: scsi_tmf_2, state: 1
-[ 7516.576959] pid: 80, parent_pid: 2, name: scsi_eh_3, state: 1
-[ 7516.576960] pid: 81, parent_pid: 2, name: scsi_tmf_3, state: 1
-[ 7516.576961] pid: 82, parent_pid: 2, name: scsi_eh_4, state: 1
-[ 7516.576961] pid: 83, parent_pid: 2, name: scsi_tmf_4, state: 1
-[ 7516.576962] pid: 84, parent_pid: 2, name: scsi_eh_5, state: 1
-[ 7516.576963] pid: 85, parent_pid: 2, name: scsi_tmf_5, state: 1
-[ 7516.576964] pid: 86, parent_pid: 2, name: scsi_eh_6, state: 1
-[ 7516.576964] pid: 87, parent_pid: 2, name: scsi_tmf_6, state: 1
-[ 7516.576965] pid: 88, parent_pid: 2, name: scsi_eh_7, state: 1
-[ 7516.576966] pid: 89, parent_pid: 2, name: scsi_tmf_7, state: 1
-[ 7516.576966] pid: 90, parent_pid: 2, name: scsi_eh_8, state: 1
-[ 7516.576967] pid: 91, parent_pid: 2, name: scsi_tmf_8, state: 1
-[ 7516.576968] pid: 92, parent_pid: 2, name: scsi_eh_9, state: 1
-[ 7516.576969] pid: 93, parent_pid: 2, name: scsi_tmf_9, state: 1
-[ 7516.576970] pid: 94, parent_pid: 2, name: scsi_eh_10, state: 1
-[ 7516.576970] pid: 95, parent_pid: 2, name: scsi_tmf_10, state: 1
-[ 7516.576971] pid: 96, parent_pid: 2, name: scsi_eh_11, state: 1
-[ 7516.576972] pid: 97, parent_pid: 2, name: scsi_tmf_11, state: 1
-[ 7516.576973] pid: 98, parent_pid: 2, name: scsi_eh_12, state: 1
-[ 7516.576973] pid: 99, parent_pid: 2, name: scsi_tmf_12, state: 1
-[ 7516.576974] pid: 100, parent_pid: 2, name: scsi_eh_13, state: 1
-[ 7516.576988] pid: 101, parent_pid: 2, name: scsi_tmf_13, state: 1
-[ 7516.576989] pid: 102, parent_pid: 2, name: scsi_eh_14, state: 1
-[ 7516.576990] pid: 103, parent_pid: 2, name: scsi_tmf_14, state: 1
-[ 7516.576991] pid: 104, parent_pid: 2, name: scsi_eh_15, state: 1
-[ 7516.576992] pid: 105, parent_pid: 2, name: scsi_tmf_15, state: 1
-[ 7516.576993] pid: 106, parent_pid: 2, name: scsi_eh_16, state: 1
-[ 7516.576993] pid: 107, parent_pid: 2, name: scsi_tmf_16, state: 1
-[ 7516.576994] pid: 108, parent_pid: 2, name: scsi_eh_17, state: 1
-[ 7516.576995] pid: 109, parent_pid: 2, name: scsi_tmf_17, state: 1
-[ 7516.576995] pid: 110, parent_pid: 2, name: scsi_eh_18, state: 1
-[ 7516.576996] pid: 111, parent_pid: 2, name: scsi_tmf_18, state: 1
-[ 7516.576997] pid: 112, parent_pid: 2, name: scsi_eh_19, state: 1
-[ 7516.576998] pid: 113, parent_pid: 2, name: scsi_tmf_19, state: 1
-[ 7516.576999] pid: 114, parent_pid: 2, name: scsi_eh_20, state: 1
-[ 7516.577000] pid: 115, parent_pid: 2, name: scsi_tmf_20, state: 1
-[ 7516.577000] pid: 116, parent_pid: 2, name: scsi_eh_21, state: 1
-[ 7516.577001] pid: 118, parent_pid: 2, name: scsi_tmf_21, state: 1
-[ 7516.577002] pid: 119, parent_pid: 2, name: scsi_eh_22, state: 1
-[ 7516.577002] pid: 120, parent_pid: 2, name: scsi_tmf_22, state: 1
-[ 7516.577003] pid: 121, parent_pid: 2, name: scsi_eh_23, state: 1
-[ 7516.577004] pid: 122, parent_pid: 2, name: scsi_tmf_23, state: 1
-[ 7516.577005] pid: 123, parent_pid: 2, name: scsi_eh_24, state: 1
-[ 7516.577005] pid: 124, parent_pid: 2, name: scsi_tmf_24, state: 1
-[ 7516.577006] pid: 125, parent_pid: 2, name: scsi_eh_25, state: 1
-[ 7516.577007] pid: 126, parent_pid: 2, name: scsi_tmf_25, state: 1
-[ 7516.577008] pid: 127, parent_pid: 2, name: scsi_eh_26, state: 1
-[ 7516.577009] pid: 128, parent_pid: 2, name: scsi_tmf_26, state: 1
-[ 7516.577009] pid: 129, parent_pid: 2, name: scsi_eh_27, state: 1
-[ 7516.577010] pid: 130, parent_pid: 2, name: scsi_tmf_27, state: 1
-[ 7516.577011] pid: 131, parent_pid: 2, name: scsi_eh_28, state: 1
-[ 7516.577012] pid: 132, parent_pid: 2, name: scsi_tmf_28, state: 1
-[ 7516.577013] pid: 133, parent_pid: 2, name: scsi_eh_29, state: 1
-[ 7516.577013] pid: 134, parent_pid: 2, name: scsi_tmf_29, state: 1
-[ 7516.577014] pid: 135, parent_pid: 2, name: scsi_eh_30, state: 1
-[ 7516.577015] pid: 136, parent_pid: 2, name: scsi_tmf_30, state: 1
-[ 7516.577016] pid: 137, parent_pid: 2, name: scsi_eh_31, state: 1
-[ 7516.577017] pid: 138, parent_pid: 2, name: scsi_tmf_31, state: 1
-[ 7516.577017] pid: 163, parent_pid: 2, name: kworker/u2:28, state: 1
-[ 7516.577018] pid: 164, parent_pid: 2, name: kworker/u2:29, state: 1
-[ 7516.577019] pid: 168, parent_pid: 2, name: kworker/0:1H, state: 1
-[ 7516.577020] pid: 190, parent_pid: 2, name: jbd2/sda1-8, state: 1
-[ 7516.577020] pid: 191, parent_pid: 2, name: ext4-rsv-conver, state: 1
-[ 7516.577021] pid: 222, parent_pid: 2, name: kauditd, state: 1
-[ 7516.577022] pid: 271, parent_pid: 2, name: ttm_swap, state: 1
-[ 7516.577023] pid: 481, parent_pid: 2, name: rpciod, state: 1
-[ 7516.577023] pid: 483, parent_pid: 2, name: nfsiod, state: 1
-[ 7516.577024] pid: 522, parent_pid: 2, name: cfg80211, state: 1
-[ 7516.577025] pid: 8941, parent_pid: 2, name: kworker/0:1, state: 1
-[ 7516.577026] pid: 9884, parent_pid: 2, name: kworker/0:0, state: 1
-[ 7516.577026] pid: 9959, parent_pid: 2, name: kworker/0:2, state: 1
-[ 7516.577738] removing module
+[14600.155517] starting process tree print
+[14600.155520] pid: 0, parent_pid: 0, name: swapper/0, state: 0
+[14600.155521] pid: 1, parent_pid: 0, name: systemd, state: 1
+[14600.155523] pid: 223, parent_pid: 1, name: systemd-journal, state: 1
+[14600.155523] pid: 242, parent_pid: 1, name: systemd-udevd, state: 1
+[14600.155524] pid: 29953, parent_pid: 242, name: systemd-udevd, state: 1
+[14600.155525] pid: 310, parent_pid: 1, name: systemd-timesyn, state: 1
+[14600.155526] pid: 467, parent_pid: 1, name: rpcbind, state: 1
+[14600.155527] pid: 476, parent_pid: 1, name: rpc.statd, state: 1
+[14600.155528] pid: 490, parent_pid: 1, name: rpc.idmapd, state: 1
+[14600.155528] pid: 492, parent_pid: 1, name: accounts-daemon, state: 1
+[14600.155529] pid: 493, parent_pid: 1, name: cron, state: 1
+[14600.155530] pid: 494, parent_pid: 1, name: ModemManager, state: 1
+[14600.155531] pid: 495, parent_pid: 1, name: rsyslogd, state: 1
+[14600.155532] pid: 496, parent_pid: 1, name: avahi-daemon, state: 1
+[14600.155533] pid: 510, parent_pid: 496, name: avahi-daemon, state: 1
+[14600.155533] pid: 498, parent_pid: 1, name: NetworkManager, state: 1
+[14600.155535] pid: 24256, parent_pid: 498, name: dhclient, state: 1
+[14600.155535] pid: 501, parent_pid: 1, name: atd, state: 1
+[14600.155536] pid: 504, parent_pid: 1, name: dbus-daemon, state: 1
+[14600.155537] pid: 527, parent_pid: 1, name: systemd-logind, state: 1
+[14600.155538] pid: 536, parent_pid: 1, name: acpid, state: 1
+[14600.155539] pid: 541, parent_pid: 1, name: cupsd, state: 1
+[14600.155539] pid: 542, parent_pid: 1, name: cups-browsed, state: 1
+[14600.155540] pid: 546, parent_pid: 1, name: sshd, state: 1
+[14600.155541] pid: 551, parent_pid: 1, name: minissdpd, state: 1
+[14600.155657] pid: 553, parent_pid: 1, name: polkitd, state: 1
+[14600.155660] pid: 555, parent_pid: 1, name: agetty, state: 1
+[14600.155661] pid: 561, parent_pid: 1, name: gdm3, state: 1
+[14600.155662] pid: 595, parent_pid: 561, name: Xorg, state: 1
+[14600.155663] pid: 1009, parent_pid: 561, name: gdm-session-wor, state: 1
+[14600.155664] pid: 1023, parent_pid: 1009, name: x-session-manag, state: 1
+[14600.155664] pid: 1060, parent_pid: 1023, name: ssh-agent, state: 1
+[14600.155665] pid: 1087, parent_pid: 1023, name: gnome-settings-, state: 1
+[14600.155666] pid: 1162, parent_pid: 1023, name: gnome-shell, state: 1
+[14600.155667] pid: 1198, parent_pid: 1023, name: evolution-alarm, state: 1
+[14600.155668] pid: 1199, parent_pid: 1023, name: nm-applet, state: 1
+[14600.155669] pid: 1201, parent_pid: 1023, name: tracker-miner-u, state: 1
+[14600.155670] pid: 1203, parent_pid: 1023, name: nautilus, state: 1
+[14600.155671] pid: 1206, parent_pid: 1023, name: tracker-extract, state: 0
+[14600.155671] pid: 1210, parent_pid: 1023, name: zeitgeist-datah, state: 1
+[14600.155672] pid: 1211, parent_pid: 1023, name: tracker-miner-f, state: 0
+[14600.155673] pid: 1212, parent_pid: 1023, name: tracker-miner-a, state: 1
+[14600.155674] pid: 1215, parent_pid: 1023, name: applet.py, state: 1
+[14600.155675] pid: 871, parent_pid: 1, name: exim4, state: 1
+[14600.155676] pid: 936, parent_pid: 1, name: upowerd, state: 1
+[14600.155677] pid: 954, parent_pid: 1, name: colord, state: 1
+[14600.155678] pid: 962, parent_pid: 1, name: rtkit-daemon, state: 1
+[14600.155679] pid: 989, parent_pid: 1, name: wpa_supplicant, state: 1
+[14600.155679] pid: 992, parent_pid: 1, name: packagekitd, state: 1
+[14600.155680] pid: 1015, parent_pid: 1, name: systemd, state: 1
+[14600.155681] pid: 1016, parent_pid: 1015, name: (sd-pam), state: 1
+[14600.155682] pid: 1020, parent_pid: 1, name: gnome-keyring-d, state: 1
+[14600.155683] pid: 1064, parent_pid: 1, name: dbus-daemon, state: 1
+[14600.155684] pid: 1063, parent_pid: 1, name: dbus-launch, state: 1
+[14600.155685] pid: 1067, parent_pid: 1, name: at-spi-bus-laun, state: 1
+[14600.155686] pid: 1071, parent_pid: 1067, name: dbus-daemon, state: 1
+[14600.155687] pid: 1075, parent_pid: 1, name: at-spi2-registr, state: 1
+[14600.155687] pid: 1102, parent_pid: 1, name: pulseaudio, state: 1
+[14600.155688] pid: 1106, parent_pid: 1, name: gvfsd, state: 1
+[14600.155689] pid: 1112, parent_pid: 1, name: start-pulseaudi, state: 1
+[14600.155690] pid: 1113, parent_pid: 1112, name: xprop, state: 1
+[14600.155690] pid: 1115, parent_pid: 1, name: gvfsd-fuse, state: 1
+[14600.155691] pid: 1125, parent_pid: 1, name: udisksd, state: 1
+[14600.155692] pid: 1123, parent_pid: 1, name: gvfs-udisks2-vo, state: 1
+[14600.155693] pid: 1137, parent_pid: 1, name: goa-daemon, state: 1
+[14600.155694] pid: 1134, parent_pid: 1, name: gvfs-goa-volume, state: 1
+[14600.155695] pid: 1147, parent_pid: 1, name: gvfs-gphoto2-vo, state: 1
+[14600.155695] pid: 1151, parent_pid: 1, name: gvfs-mtp-volume, state: 1
+[14600.155696] pid: 1155, parent_pid: 1, name: gvfs-afc-volume, state: 1
+[14600.155697] pid: 1145, parent_pid: 1, name: mission-control, state: 1
+[14600.155698] pid: 1166, parent_pid: 1, name: gsd-printer, state: 1
+[14600.155699] pid: 1185, parent_pid: 1, name: evolution-sourc, state: 1
+[14600.155700] pid: 1181, parent_pid: 1, name: gnome-shell-cal, state: 1
+[14600.155701] pid: 1207, parent_pid: 1, name: tracker-store, state: 1
+[14600.155701] pid: 1231, parent_pid: 1, name: gconfd-2, state: 1
+[14600.155702] pid: 1217, parent_pid: 1, name: zeitgeist-daemo, state: 1
+[14600.155703] pid: 1243, parent_pid: 1, name: zeitgeist-fts, state: 1
+[14600.155704] pid: 1258, parent_pid: 1243, name: cat, state: 1
+[14600.155705] pid: 1273, parent_pid: 1, name: gvfsd-trash, state: 1
+[14600.155706] pid: 1291, parent_pid: 1, name: gvfsd-metadata, state: 1
+[14600.155707] pid: 1295, parent_pid: 1, name: gvfsd-burn, state: 1
+[14600.155708] pid: 1252, parent_pid: 1, name: evolution-calen, state: 1
+[14600.155709] pid: 1345, parent_pid: 1, name: dconf-service, state: 1
+[14600.155740] pid: 1378, parent_pid: 1, name: gvfsd-network, state: 1
+[14600.155742] pid: 1390, parent_pid: 1, name: gvfsd-dnssd, state: 1
+[14600.155743] pid: 7484, parent_pid: 1, name: sublime_text, state: 1
+[14600.155744] pid: 7494, parent_pid: 7484, name: plugin_host, state: 1
+[14600.155745] pid: 24333, parent_pid: 1, name: gnome-terminal-, state: 1
+[14600.155746] pid: 24336, parent_pid: 24333, name: gnome-pty-helpe, state: 1
+[14600.155746] pid: 24337, parent_pid: 24333, name: bash, state: 1
+[14600.155748] pid: 29608, parent_pid: 24337, name: su, state: 1
+[14600.155748] pid: 29616, parent_pid: 29608, name: bash, state: 1
+[14600.155749] pid: 29631, parent_pid: 29616, name: bash, state: 1
+[14600.155750] pid: 30512, parent_pid: 29631, name: insmod, state: 0
+[14600.155751] pid: 2, parent_pid: 0, name: kthreadd, state: 1
+[14600.155751] pid: 3, parent_pid: 2, name: ksoftirqd/0, state: 1
+[14600.155752] pid: 5, parent_pid: 2, name: kworker/0:0H, state: 1
+[14600.155753] pid: 7, parent_pid: 2, name: rcu_sched, state: 1
+[14600.155754] pid: 8, parent_pid: 2, name: rcu_bh, state: 1
+[14600.155754] pid: 9, parent_pid: 2, name: migration/0, state: 1
+[14600.155755] pid: 10, parent_pid: 2, name: watchdog/0, state: 1
+[14600.155756] pid: 11, parent_pid: 2, name: khelper, state: 1
+[14600.155757] pid: 12, parent_pid: 2, name: kdevtmpfs, state: 1
+[14600.155758] pid: 13, parent_pid: 2, name: netns, state: 1
+[14600.155759] pid: 14, parent_pid: 2, name: khungtaskd, state: 1
+[14600.155759] pid: 15, parent_pid: 2, name: writeback, state: 1
+[14600.155760] pid: 16, parent_pid: 2, name: ksmd, state: 1
+[14600.155761] pid: 17, parent_pid: 2, name: khugepaged, state: 1
+[14600.155762] pid: 18, parent_pid: 2, name: crypto, state: 1
+[14600.155763] pid: 19, parent_pid: 2, name: kintegrityd, state: 1
+[14600.155763] pid: 20, parent_pid: 2, name: bioset, state: 1
+[14600.155764] pid: 21, parent_pid: 2, name: kblockd, state: 1
+[14600.155765] pid: 23, parent_pid: 2, name: kswapd0, state: 1
+[14600.155766] pid: 24, parent_pid: 2, name: vmstat, state: 1
+[14600.155767] pid: 25, parent_pid: 2, name: fsnotify_mark, state: 1
+[14600.155768] pid: 31, parent_pid: 2, name: kthrotld, state: 1
+[14600.155769] pid: 32, parent_pid: 2, name: ipv6_addrconf, state: 1
+[14600.155769] pid: 33, parent_pid: 2, name: deferwq, state: 1
+[14600.155770] pid: 68, parent_pid: 2, name: ata_sff, state: 1
+[14600.155771] pid: 69, parent_pid: 2, name: scsi_eh_0, state: 1
+[14600.155772] pid: 70, parent_pid: 2, name: scsi_tmf_0, state: 1
+[14600.155772] pid: 71, parent_pid: 2, name: scsi_eh_1, state: 1
+[14600.155773] pid: 72, parent_pid: 2, name: scsi_tmf_1, state: 1
+[14600.155774] pid: 75, parent_pid: 2, name: khubd, state: 1
+[14600.155775] pid: 76, parent_pid: 2, name: kpsmoused, state: 1
+[14600.155776] pid: 78, parent_pid: 2, name: scsi_eh_2, state: 1
+[14600.155777] pid: 79, parent_pid: 2, name: scsi_tmf_2, state: 1
+[14600.155777] pid: 80, parent_pid: 2, name: scsi_eh_3, state: 1
+[14600.155778] pid: 81, parent_pid: 2, name: scsi_tmf_3, state: 1
+[14600.155779] pid: 82, parent_pid: 2, name: scsi_eh_4, state: 1
+[14600.155780] pid: 83, parent_pid: 2, name: scsi_tmf_4, state: 1
+[14600.155780] pid: 84, parent_pid: 2, name: scsi_eh_5, state: 1
+[14600.155781] pid: 85, parent_pid: 2, name: scsi_tmf_5, state: 1
+[14600.155782] pid: 86, parent_pid: 2, name: scsi_eh_6, state: 1
+[14600.155783] pid: 87, parent_pid: 2, name: scsi_tmf_6, state: 1
+[14600.155783] pid: 88, parent_pid: 2, name: scsi_eh_7, state: 1
+[14600.155784] pid: 89, parent_pid: 2, name: scsi_tmf_7, state: 1
+[14600.155785] pid: 90, parent_pid: 2, name: scsi_eh_8, state: 1
+[14600.155786] pid: 91, parent_pid: 2, name: scsi_tmf_8, state: 1
+[14600.155787] pid: 92, parent_pid: 2, name: scsi_eh_9, state: 1
+[14600.155787] pid: 93, parent_pid: 2, name: scsi_tmf_9, state: 1
+[14600.155788] pid: 94, parent_pid: 2, name: scsi_eh_10, state: 1
+[14600.155789] pid: 95, parent_pid: 2, name: scsi_tmf_10, state: 1
+[14600.155812] pid: 96, parent_pid: 2, name: scsi_eh_11, state: 1
+[14600.155813] pid: 97, parent_pid: 2, name: scsi_tmf_11, state: 1
+[14600.155814] pid: 98, parent_pid: 2, name: scsi_eh_12, state: 1
+[14600.155815] pid: 99, parent_pid: 2, name: scsi_tmf_12, state: 1
+[14600.155816] pid: 100, parent_pid: 2, name: scsi_eh_13, state: 1
+[14600.155817] pid: 101, parent_pid: 2, name: scsi_tmf_13, state: 1
+[14600.155818] pid: 102, parent_pid: 2, name: scsi_eh_14, state: 1
+[14600.155819] pid: 103, parent_pid: 2, name: scsi_tmf_14, state: 1
+[14600.155819] pid: 104, parent_pid: 2, name: scsi_eh_15, state: 1
+[14600.155820] pid: 105, parent_pid: 2, name: scsi_tmf_15, state: 1
+[14600.155821] pid: 106, parent_pid: 2, name: scsi_eh_16, state: 1
+[14600.155822] pid: 107, parent_pid: 2, name: scsi_tmf_16, state: 1
+[14600.155823] pid: 108, parent_pid: 2, name: scsi_eh_17, state: 1
+[14600.155824] pid: 109, parent_pid: 2, name: scsi_tmf_17, state: 1
+[14600.155824] pid: 110, parent_pid: 2, name: scsi_eh_18, state: 1
+[14600.155825] pid: 111, parent_pid: 2, name: scsi_tmf_18, state: 1
+[14600.155826] pid: 112, parent_pid: 2, name: scsi_eh_19, state: 1
+[14600.155827] pid: 113, parent_pid: 2, name: scsi_tmf_19, state: 1
+[14600.155828] pid: 114, parent_pid: 2, name: scsi_eh_20, state: 1
+[14600.155828] pid: 115, parent_pid: 2, name: scsi_tmf_20, state: 1
+[14600.155829] pid: 116, parent_pid: 2, name: scsi_eh_21, state: 1
+[14600.155830] pid: 118, parent_pid: 2, name: scsi_tmf_21, state: 1
+[14600.155831] pid: 119, parent_pid: 2, name: scsi_eh_22, state: 1
+[14600.155832] pid: 120, parent_pid: 2, name: scsi_tmf_22, state: 1
+[14600.155833] pid: 121, parent_pid: 2, name: scsi_eh_23, state: 1
+[14600.155834] pid: 122, parent_pid: 2, name: scsi_tmf_23, state: 1
+[14600.155834] pid: 123, parent_pid: 2, name: scsi_eh_24, state: 1
+[14600.155835] pid: 124, parent_pid: 2, name: scsi_tmf_24, state: 1
+[14600.155836] pid: 125, parent_pid: 2, name: scsi_eh_25, state: 1
+[14600.155837] pid: 126, parent_pid: 2, name: scsi_tmf_25, state: 1
+[14600.155837] pid: 127, parent_pid: 2, name: scsi_eh_26, state: 1
+[14600.155839] pid: 128, parent_pid: 2, name: scsi_tmf_26, state: 1
+[14600.155839] pid: 129, parent_pid: 2, name: scsi_eh_27, state: 1
+[14600.155840] pid: 130, parent_pid: 2, name: scsi_tmf_27, state: 1
+[14600.155841] pid: 131, parent_pid: 2, name: scsi_eh_28, state: 1
+[14600.155842] pid: 132, parent_pid: 2, name: scsi_tmf_28, state: 1
+[14600.155842] pid: 133, parent_pid: 2, name: scsi_eh_29, state: 1
+[14600.155843] pid: 134, parent_pid: 2, name: scsi_tmf_29, state: 1
+[14600.155844] pid: 135, parent_pid: 2, name: scsi_eh_30, state: 1
+[14600.155845] pid: 136, parent_pid: 2, name: scsi_tmf_30, state: 1
+[14600.155845] pid: 137, parent_pid: 2, name: scsi_eh_31, state: 1
+[14600.155846] pid: 138, parent_pid: 2, name: scsi_tmf_31, state: 1
+[14600.155847] pid: 163, parent_pid: 2, name: kworker/u2:28, state: 1
+[14600.155848] pid: 164, parent_pid: 2, name: kworker/u2:29, state: 1
+[14600.155848] pid: 168, parent_pid: 2, name: kworker/0:1H, state: 1
+[14600.155849] pid: 190, parent_pid: 2, name: jbd2/sda1-8, state: 1
+[14600.155850] pid: 191, parent_pid: 2, name: ext4-rsv-conver, state: 1
+[14600.155851] pid: 222, parent_pid: 2, name: kauditd, state: 1
+[14600.155852] pid: 271, parent_pid: 2, name: ttm_swap, state: 1
+[14600.155852] pid: 481, parent_pid: 2, name: rpciod, state: 1
+[14600.155853] pid: 483, parent_pid: 2, name: nfsiod, state: 1
+[14600.155854] pid: 522, parent_pid: 2, name: cfg80211, state: 1
+[14600.155855] pid: 24238, parent_pid: 2, name: kworker/0:0, state: 1
+[14600.155856] pid: 24451, parent_pid: 2, name: kworker/0:2, state: 1
+[14600.155856] pid: 29162, parent_pid: 2, name: kworker/0:1, state: 1
+[14600.165754] removing module
