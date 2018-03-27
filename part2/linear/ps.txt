@@ -3,7 +3,7 @@ root         1     0     1  0    1 04:54 ?        00:00:02 /sbin/init
 root         2     0     2  0    1 04:54 ?        00:00:00 [kthreadd]
 root         3     2     3  0    1 04:54 ?        00:00:04 [ksoftirqd/0]
 root         5     2     5  0    1 04:54 ?        00:00:00 [kworker/0:0H]
-root         7     2     7  0    1 04:54 ?        00:00:02 [rcu_sched]
+root         7     2     7  0    1 04:54 ?        00:00:03 [rcu_sched]
 root         8     2     8  0    1 04:54 ?        00:00:00 [rcu_bh]
 root         9     2     9  0    1 04:54 ?        00:00:00 [migration/0]
 root        10     2    10  0    1 04:54 ?        00:00:00 [watchdog/0]
@@ -138,7 +138,7 @@ root       561     1   561  0    4 04:54 ?        00:00:00 /usr/sbin/gdm3
 root       561     1   585  0    4 04:54 ?        00:00:00 /usr/sbin/gdm3
 root       561     1   588  0    4 04:54 ?        00:00:00 /usr/sbin/gdm3
 root       561     1   592  0    4 04:54 ?        00:00:00 /usr/sbin/gdm3
-root       595   561   595  4    1 04:54 tty7     00:21:24 /usr/bin/Xorg :0 -novtswitch -background none -noreset -verbose 3 -auth /var/run/gdm3/auth-for-Debian-gdm-wbI2Wk/database -seat seat0 -nolisten tcp vt7
+root       595   561   595  4    1 04:54 tty7     00:22:32 /usr/bin/Xorg :0 -novtswitch -background none -noreset -verbose 3 -auth /var/run/gdm3/auth-for-Debian-gdm-wbI2Wk/database -seat seat0 -nolisten tcp vt7
 Debian-+   871     1   871  0    1 04:54 ?        00:00:00 /usr/sbin/exim4 -bd -q30m
 root       936     1   936  0    3 04:55 ?        00:00:00 /usr/lib/upower/upowerd
 root       936     1   937  0    3 04:55 ?        00:00:00 /usr/lib/upower/upowerd
@@ -175,7 +175,7 @@ oscread+  1067     1  1068  0    4 04:56 ?        00:00:00 /usr/lib/at-spi2-core
 oscread+  1067     1  1070  0    4 04:56 ?        00:00:00 /usr/lib/at-spi2-core/at-spi-bus-launcher
 oscread+  1067     1  1072  0    4 04:56 ?        00:00:00 /usr/lib/at-spi2-core/at-spi-bus-launcher
 oscread+  1071  1067  1071  0    1 04:56 ?        00:00:00 /usr/bin/dbus-daemon --config-file=/etc/at-spi2/accessibility.conf --nofork --print-address 3
-oscread+  1075     1  1075  0    2 04:56 ?        00:00:01 /usr/lib/at-spi2-core/at-spi2-registryd --use-gnome-session
+oscread+  1075     1  1075  0    2 04:56 ?        00:00:02 /usr/lib/at-spi2-core/at-spi2-registryd --use-gnome-session
 oscread+  1075     1  1079  0    2 04:56 ?        00:00:00 /usr/lib/at-spi2-core/at-spi2-registryd --use-gnome-session
 oscread+  1087  1023  1087  0    5 04:56 ?        00:00:01 /usr/lib/gnome-settings-daemon/gnome-settings-daemon
 oscread+  1087  1023  1097  0    5 04:56 ?        00:00:00 /usr/lib/gnome-settings-daemon/gnome-settings-daemon
@@ -196,11 +196,12 @@ oscread+  1115     1  1121  0    5 04:56 ?        00:00:00 /usr/lib/gvfs/gvfsd-f
 oscread+  1123     1  1123  0    3 04:56 ?        00:00:00 /usr/lib/gvfs/gvfs-udisks2-volume-monitor
 oscread+  1123     1  1124  0    3 04:56 ?        00:00:00 /usr/lib/gvfs/gvfs-udisks2-volume-monitor
 oscread+  1123     1  1131  0    3 04:56 ?        00:00:00 /usr/lib/gvfs/gvfs-udisks2-volume-monitor
-root      1125     1  1125  0    5 04:56 ?        00:00:00 /usr/lib/udisks2/udisksd --no-debug
-root      1125     1  1126  0    5 04:56 ?        00:00:00 /usr/lib/udisks2/udisksd --no-debug
-root      1125     1  1128  0    5 04:56 ?        00:00:00 /usr/lib/udisks2/udisksd --no-debug
-root      1125     1  1129  0    5 04:56 ?        00:00:00 /usr/lib/udisks2/udisksd --no-debug
-root      1125     1  1130  0    5 04:56 ?        00:00:00 /usr/lib/udisks2/udisksd --no-debug
+root      1125     1  1125  0    6 04:56 ?        00:00:00 /usr/lib/udisks2/udisksd --no-debug
+root      1125     1  1126  0    6 04:56 ?        00:00:00 /usr/lib/udisks2/udisksd --no-debug
+root      1125     1  1128  0    6 04:56 ?        00:00:00 /usr/lib/udisks2/udisksd --no-debug
+root      1125     1  1129  0    6 04:56 ?        00:00:00 /usr/lib/udisks2/udisksd --no-debug
+root      1125     1  1130  0    6 04:56 ?        00:00:00 /usr/lib/udisks2/udisksd --no-debug
+root      1125     1  1940  0    6 14:06 ?        00:00:00 /usr/lib/udisks2/udisksd --no-debug
 oscread+  1134     1  1134  0    2 04:56 ?        00:00:00 /usr/lib/gvfs/gvfs-goa-volume-monitor
 oscread+  1134     1  1135  0    2 04:56 ?        00:00:00 /usr/lib/gvfs/gvfs-goa-volume-monitor
 oscread+  1137     1  1137  0    4 04:56 ?        00:00:00 /usr/lib/gnome-online-accounts/goa-daemon
@@ -217,7 +218,7 @@ oscread+  1151     1  1153  0    2 04:56 ?        00:00:00 /usr/lib/gvfs/gvfs-mt
 oscread+  1155     1  1155  0    3 04:56 ?        00:00:00 /usr/lib/gvfs/gvfs-afc-volume-monitor
 oscread+  1155     1  1159  0    3 04:56 ?        00:00:00 /usr/lib/gvfs/gvfs-afc-volume-monitor
 oscread+  1155     1  1161  0    3 04:56 ?        00:00:00 /usr/lib/gvfs/gvfs-afc-volume-monitor
-oscread+  1162  1023  1162 13    7 04:56 ?        01:14:08 /usr/bin/gnome-shell
+oscread+  1162  1023  1162 14    7 04:56 ?        01:17:47 /usr/bin/gnome-shell
 oscread+  1162  1023  1167  0    7 04:56 ?        00:00:00 /usr/bin/gnome-shell
 oscread+  1162  1023  1171  0    7 04:56 ?        00:00:00 /usr/bin/gnome-shell
 oscread+  1162  1023  1176  0    7 04:56 ?        00:00:00 /usr/bin/gnome-shell
@@ -249,26 +250,25 @@ oscread+  1203  1023  1203  0    4 04:56 ?        00:00:13 nautilus -n
 oscread+  1203  1023  1232  0    4 04:56 ?        00:00:00 nautilus -n
 oscread+  1203  1023  1238  0    4 04:56 ?        00:00:00 nautilus -n
 oscread+  1203  1023  1261  0    4 04:56 ?        00:00:00 nautilus -n
-oscread+  1206  1023  1206  0   15 04:56 ?        00:00:04 /usr/lib/tracker/tracker-extract
-oscread+  1206  1023  1225  0   15 04:56 ?        00:00:00 /usr/lib/tracker/tracker-extract
-oscread+  1206  1023  1227  0   15 04:56 ?        00:00:01 /usr/lib/tracker/tracker-extract
-oscread+  1206  1023  1228  0   15 04:56 ?        00:00:00 /usr/lib/tracker/tracker-extract
-oscread+  1206  1023  1311  0   15 04:56 ?        00:00:00 /usr/lib/tracker/tracker-extract
-oscread+  1206  1023  1312  0   15 04:56 ?        00:00:00 /usr/lib/tracker/tracker-extract
-oscread+  1206  1023  1313  0   15 04:56 ?        00:00:00 /usr/lib/tracker/tracker-extract
-oscread+  1206  1023  1314  0   15 04:56 ?        00:00:00 /usr/lib/tracker/tracker-extract
-oscread+  1206  1023  1315  0   15 04:56 ?        00:00:00 /usr/lib/tracker/tracker-extract
-oscread+  1206  1023  1316  0   15 04:56 ?        00:00:00 /usr/lib/tracker/tracker-extract
-oscread+  1206  1023  1317  0   15 04:56 ?        00:00:00 /usr/lib/tracker/tracker-extract
-oscread+  1206  1023  1318  0   15 04:56 ?        00:00:00 /usr/lib/tracker/tracker-extract
-oscread+  1206  1023  1319  0   15 04:56 ?        00:00:00 /usr/lib/tracker/tracker-extract
-oscread+  1206  1023  1320  0   15 04:56 ?        00:00:00 /usr/lib/tracker/tracker-extract
-oscread+  1206  1023 27351  0   15 13:47 ?        00:00:00 /usr/lib/tracker/tracker-extract
+oscread+  1206  1023  1206  0   14 04:56 ?        00:00:04 /usr/lib/tracker/tracker-extract
+oscread+  1206  1023  1225  0   14 04:56 ?        00:00:00 /usr/lib/tracker/tracker-extract
+oscread+  1206  1023  1227  0   14 04:56 ?        00:00:01 /usr/lib/tracker/tracker-extract
+oscread+  1206  1023  1228  0   14 04:56 ?        00:00:00 /usr/lib/tracker/tracker-extract
+oscread+  1206  1023  1311  0   14 04:56 ?        00:00:00 /usr/lib/tracker/tracker-extract
+oscread+  1206  1023  1312  0   14 04:56 ?        00:00:00 /usr/lib/tracker/tracker-extract
+oscread+  1206  1023  1313  0   14 04:56 ?        00:00:00 /usr/lib/tracker/tracker-extract
+oscread+  1206  1023  1314  0   14 04:56 ?        00:00:00 /usr/lib/tracker/tracker-extract
+oscread+  1206  1023  1315  0   14 04:56 ?        00:00:00 /usr/lib/tracker/tracker-extract
+oscread+  1206  1023  1316  0   14 04:56 ?        00:00:00 /usr/lib/tracker/tracker-extract
+oscread+  1206  1023  1317  0   14 04:56 ?        00:00:00 /usr/lib/tracker/tracker-extract
+oscread+  1206  1023  1318  0   14 04:56 ?        00:00:00 /usr/lib/tracker/tracker-extract
+oscread+  1206  1023  1319  0   14 04:56 ?        00:00:00 /usr/lib/tracker/tracker-extract
+oscread+  1206  1023  1320  0   14 04:56 ?        00:00:00 /usr/lib/tracker/tracker-extract
 oscread+  1207     1  1207  0    8 04:56 ?        00:00:02 /usr/lib/tracker/tracker-store
 oscread+  1207     1  1220  0    8 04:56 ?        00:00:00 /usr/lib/tracker/tracker-store
 oscread+  1207     1  1222  0    8 04:56 ?        00:00:00 /usr/lib/tracker/tracker-store
 oscread+  1207     1  1223  0    8 04:56 ?        00:00:00 /usr/lib/tracker/tracker-store
-oscread+  1207     1  1233  0    8 04:56 ?        00:02:30 /usr/lib/tracker/tracker-store
+oscread+  1207     1  1233  0    8 04:56 ?        00:02:31 /usr/lib/tracker/tracker-store
 oscread+  1207     1  1234  0    8 04:56 ?        00:00:00 /usr/lib/tracker/tracker-store
 oscread+  1207     1  1235  0    8 04:56 ?        00:00:00 /usr/lib/tracker/tracker-store
 oscread+  1207     1  1236  0    8 04:56 ?        00:00:01 /usr/lib/tracker/tracker-store
@@ -280,7 +280,7 @@ oscread+  1211  1023  1211  0    5 04:56 ?        00:00:15 /usr/lib/tracker/trac
 oscread+  1211  1023  1224  0    5 04:56 ?        00:00:00 /usr/lib/tracker/tracker-miner-fs
 oscread+  1211  1023  1226  0    5 04:56 ?        00:00:00 /usr/lib/tracker/tracker-miner-fs
 oscread+  1211  1023  1229  0    5 04:56 ?        00:00:01 /usr/lib/tracker/tracker-miner-fs
-oscread+  1211  1023 27332  0    5 13:47 ?        00:00:00 /usr/lib/tracker/tracker-miner-fs
+oscread+  1211  1023  1948  0    5 14:06 ?        00:00:00 /usr/lib/tracker/tracker-miner-fs
 oscread+  1212  1023  1212  0    3 04:56 ?        00:00:00 /usr/lib/tracker/tracker-miner-apps
 oscread+  1212  1023  1324  0    3 04:56 ?        00:00:00 /usr/lib/tracker/tracker-miner-apps
 oscread+  1212  1023  1329  0    3 04:56 ?        00:00:00 /usr/lib/tracker/tracker-miner-apps
@@ -322,39 +322,30 @@ oscread+  1390     1  1390  0    4 04:57 ?        00:00:00 /usr/lib/gvfs/gvfsd-d
 oscread+  1390     1  1391  0    4 04:57 ?        00:00:00 /usr/lib/gvfs/gvfsd-dnssd --spawner :1.9 /org/gtk/gvfs/exec_spaw/4
 oscread+  1390     1  1393  0    4 04:57 ?        00:00:00 /usr/lib/gvfs/gvfsd-dnssd --spawner :1.9 /org/gtk/gvfs/exec_spaw/4
 oscread+  1390     1  1394  0    4 04:57 ?        00:00:00 /usr/lib/gvfs/gvfsd-dnssd --spawner :1.9 /org/gtk/gvfs/exec_spaw/4
+root      1949 19425  1949  0    1 14:06 pts/0    00:00:00 bash
+root      2262   242  2262  0    1 14:06 ?        00:00:00 /lib/systemd/systemd-udevd
+root      2266  1949  2266  0    1 14:06 pts/0    00:00:00 ps -eLf
 root      3416  1009  3416  0    3 11:05 ?        00:00:00 gdm-session-worker [pam/gdm-password]
 root      3416  1009  3422  0    3 11:05 ?        00:00:00 gdm-session-worker [pam/gdm-password]
 root      3416  1009  3425  0    3 11:05 ?        00:00:00 gdm-session-worker [pam/gdm-password]
-root      4059     2  4059  0    1 11:40 ?        00:00:00 [kworker/u2:0]
+root      4059     2  4059  0    1 11:40 ?        00:00:01 [kworker/u2:0]
 root      4503     1  4503  0    1 11:43 ?        00:00:00 /usr/lib/bluetooth/bluetoothd
 root      4816     2  4816  0    1 11:48 ?        00:00:00 [kworker/u2:1]
 oscread+  5905     1  5905  0    2 12:24 ?        00:00:00 /usr/lib/dleyna-renderer/dleyna-renderer-service
 oscread+  5905     1  5906  0    2 12:24 ?        00:00:00 /usr/lib/dleyna-renderer/dleyna-renderer-service
-root      7484     1  7484  1    9 05:37 ?        00:07:53 /opt/sublime_text/sublime_text .
-root      7484     1  7486  0    9 05:37 ?        00:00:00 /opt/sublime_text/sublime_text .
-root      7484     1  7487  0    9 05:37 ?        00:00:00 /opt/sublime_text/sublime_text .
-root      7484     1  7488  0    9 05:37 ?        00:00:00 /opt/sublime_text/sublime_text .
-root      7484     1  7489  0    9 05:37 ?        00:00:00 /opt/sublime_text/sublime_text .
-root      7484     1  7493  0    9 05:37 ?        00:00:00 /opt/sublime_text/sublime_text .
-root      7484     1  7495  0    9 05:37 ?        00:00:00 /opt/sublime_text/sublime_text .
-root      7484     1 30901  0    9 09:03 ?        00:00:00 /opt/sublime_text/sublime_text .
-root      7484     1  3527  0    9 11:08 ?        00:00:00 /opt/sublime_text/sublime_text .
-root      7494  7484  7494  0    3 05:37 ?        00:00:05 /opt/sublime_text/plugin_host 7484
-root      7494  7484  7496  0    3 05:37 ?        00:00:00 /opt/sublime_text/plugin_host 7484
-root      7494  7484  7497  0    3 05:37 ?        00:00:00 /opt/sublime_text/plugin_host 7484
 root     19371     1 19371  0    1 12:52 pts/0    00:00:00 /usr/bin/dbus-launch --autolaunch 982e471ca2a94825b7d1fd0a90dcba3d --binary-syntax --close-stderr
 root     19372     1 19372  0    1 12:52 ?        00:00:00 /usr/bin/dbus-daemon --fork --print-pid 5 --print-address 7 --session
 root     19374     1 19374  0    1 12:52 ?        00:00:00 /usr/lib/i386-linux-gnu/gconf/gconfd-2
 root     19424 30839 19424  0    1 12:53 pts/0    00:00:00 su
 root     19425 19424 19425  0    1 12:53 pts/0    00:00:00 bash
-root     25462     1 25462  1    7 13:00 ?        00:00:55 /opt/sublime_text/sublime_text /lib/modules/3.16.0-4-686-pae/source/
+root     25462     1 25462  1    7 13:00 ?        00:01:03 /opt/sublime_text/sublime_text /lib/modules/3.16.0-4-686-pae/source/
 root     25462     1 25464  0    7 13:00 ?        00:00:00 /opt/sublime_text/sublime_text /lib/modules/3.16.0-4-686-pae/source/
 root     25462     1 25465  0    7 13:00 ?        00:00:00 /opt/sublime_text/sublime_text /lib/modules/3.16.0-4-686-pae/source/
 root     25462     1 25466  0    7 13:00 ?        00:00:00 /opt/sublime_text/sublime_text /lib/modules/3.16.0-4-686-pae/source/
 root     25462     1 25467  0    7 13:00 ?        00:00:00 /opt/sublime_text/sublime_text /lib/modules/3.16.0-4-686-pae/source/
 root     25462     1 25471  0    7 13:00 ?        00:00:00 /opt/sublime_text/sublime_text /lib/modules/3.16.0-4-686-pae/source/
 root     25462     1 25473  0    7 13:00 ?        00:00:00 /opt/sublime_text/sublime_text /lib/modules/3.16.0-4-686-pae/source/
-root     25472 25462 25472  0    3 13:00 ?        00:00:00 /opt/sublime_text/plugin_host 25462
+root     25472 25462 25472  0    3 13:00 ?        00:00:01 /opt/sublime_text/plugin_host 25462
 root     25472 25462 25474  0    3 13:00 ?        00:00:00 /opt/sublime_text/plugin_host 25462
 root     25472 25462 25475  0    3 13:00 ?        00:00:00 /opt/sublime_text/plugin_host 25462
 root     25524  1009 25524  0    3 13:14 ?        00:00:00 gdm-session-worker [pam/gdm-password]
@@ -363,23 +354,31 @@ root     25524  1009 25529  0    3 13:14 ?        00:00:00 gdm-session-worker [p
 root     25568  1009 25568  0    3 13:25 ?        00:00:00 gdm-session-worker [pam/gdm-password]
 root     25568  1009 25572  0    3 13:25 ?        00:00:00 gdm-session-worker [pam/gdm-password]
 root     25568  1009 25576  0    3 13:25 ?        00:00:00 gdm-session-worker [pam/gdm-password]
-root     25582     2 25582  0    1 13:29 ?        00:00:00 [kworker/0:1]
-root     25594     2 25594  0    1 13:39 ?        00:00:00 [kworker/0:2]
 root     25606  1009 25606  0    3 13:41 ?        00:00:00 gdm-session-worker [pam/gdm-password]
 root     25606  1009 25610  0    3 13:41 ?        00:00:00 gdm-session-worker [pam/gdm-password]
 root     25606  1009 25614  0    3 13:41 ?        00:00:00 gdm-session-worker [pam/gdm-password]
-root     25963     2 25963  0    1 13:44 ?        00:00:00 [kworker/0:0]
-root     27267 19425 27267  0    1 13:47 pts/0    00:00:00 bash
-root     27582   242 27582  0    1 13:47 ?        00:00:00 /lib/systemd/systemd-udevd
-root     27586 27267 27586  0    1 13:47 pts/0    00:00:00 ps -eLf
-oscread+ 30835     1 30835  0    4 09:02 ?        00:00:16 /usr/lib/gnome-terminal/gnome-terminal-server
+root     30139     2 30139  0    1 13:54 ?        00:00:00 [kworker/0:2]
+oscread+ 30835     1 30835  0    4 09:02 ?        00:00:18 /usr/lib/gnome-terminal/gnome-terminal-server
 oscread+ 30835     1 30836  0    4 09:02 ?        00:00:00 /usr/lib/gnome-terminal/gnome-terminal-server
 oscread+ 30835     1 30837  0    4 09:02 ?        00:00:00 /usr/lib/gnome-terminal/gnome-terminal-server
 oscread+ 30835     1 30840  0    4 09:02 ?        00:00:00 /usr/lib/gnome-terminal/gnome-terminal-server
 oscread+ 30838 30835 30838  0    1 09:02 ?        00:00:00 gnome-pty-helper
 oscread+ 30839 30835 30839  0    1 09:02 pts/0    00:00:00 bash
+root     31334     2 31334  0    1 13:59 ?        00:00:00 [kworker/0:1]
 root     31458   498 31458  0    1 09:40 ?        00:00:00 /sbin/dhclient -d -q -sf /usr/lib/NetworkManager/nm-dhcp-helper -pf /var/run/dhclient-eth0.pid -lf /var/lib/NetworkManager/dhclient-c022a989-d48b-4bc0-ba84-9acbf6015fea-eth0.lease -cf /var/lib/NetworkManager/dhclient-eth0.conf eth0
 root     31698     1 31698  0    1 09:40 ?        00:00:00 /usr/sbin/cupsd -f
 root     31858  1009 31858  0    3 10:06 ?        00:00:00 gdm-session-worker [pam/gdm-password]
 root     31858  1009 31861  0    3 10:06 ?        00:00:00 gdm-session-worker [pam/gdm-password]
 root     31858  1009 31863  0    3 10:06 ?        00:00:00 gdm-session-worker [pam/gdm-password]
+root     31892     1 31892  3    8 14:01 ?        00:00:09 /opt/sublime_text/sublime_text dfs/
+root     31892     1 31894  0    8 14:01 ?        00:00:00 /opt/sublime_text/sublime_text dfs/
+root     31892     1 31895  0    8 14:01 ?        00:00:00 /opt/sublime_text/sublime_text dfs/
+root     31892     1 31896  0    8 14:01 ?        00:00:00 /opt/sublime_text/sublime_text dfs/
+root     31892     1 31897  0    8 14:01 ?        00:00:00 /opt/sublime_text/sublime_text dfs/
+root     31892     1 31901  0    8 14:01 ?        00:00:00 /opt/sublime_text/sublime_text dfs/
+root     31892     1 31903  0    8 14:01 ?        00:00:00 /opt/sublime_text/sublime_text dfs/
+root     31892     1 31912  0    8 14:01 ?        00:00:00 /opt/sublime_text/sublime_text dfs/
+root     31902 31892 31902  0    3 14:01 ?        00:00:00 /opt/sublime_text/plugin_host 31892
+root     31902 31892 31904  0    3 14:01 ?        00:00:00 /opt/sublime_text/plugin_host 31892
+root     31902 31892 31905  0    3 14:01 ?        00:00:00 /opt/sublime_text/plugin_host 31892
+root     31930     2 31930  0    1 14:04 ?        00:00:00 [kworker/0:0]

@@ -7,12 +7,44 @@
 
 struct task_struct *task;
 
+char* convertStateToString(long state){
+	
+	switch(state){
+		case 0:
+			return "running";
+		case 1:
+			return "interruptable";
+		case 2:
+			return "uninterruptable";
+		case 4:
+			return "stopped";
+		case 8:
+			return "traced";
+		case 16:
+			return "exit dead";
+		case 32:
+			return "exit zombie";
+		case 64:
+			return "dead";
+		case 128:
+			return "wakekill";
+		case 256:
+			return "waking";
+		case 512:
+			return "parked";
+		case 1024:
+			return "state_max";
+		default:
+			return "undefined";
+	}
+}
+
 int simple_init(void)
 {
 	printk(KERN_INFO "starting process tree print \n");
-	printk(KERN_INFO "pid: %d, parent_pid: %d, name: %s, state: %ld", init_task.pid, init_task.real_parent->pid, init_task.comm, init_task.state);
+	printk(KERN_INFO "pid: %d, parent_pid: %d, name: %s, state: %s", init_task.pid, init_task.real_parent->pid, init_task.comm, convertStateToString(init_task.state));
 	for_each_process(task){
-		printk(KERN_INFO "pid: %d, parent_pid: %d, name: %s, state: %ld", task->pid, task->real_parent->pid, task->comm, task->state);
+		printk(KERN_INFO "pid: %d, parent_pid: %d, name: %s, state: %s", task->pid, task->real_parent->pid, task->comm, convertStateToString(task->state));
 	}
 
 	return 0;

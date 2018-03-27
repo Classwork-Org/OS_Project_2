@@ -66,11 +66,12 @@ def checkOutWithPs():
 	pidWithWrongParent = []
 	pidsThatDontExist = []
 	for eachLine in kmodOut:
-		m = re.match('^.* pid: (?P<pid>[0-9]+), parent_pid: (?P<ppid>[0-9]+)', eachLine)
+		m = re.match('^.* pid: (?P<pid>[0-9]+), parent_pid: (?P<ppid>[0-9]+), name: (?P<name>.+),', eachLine)
 		if m != None:
 			noOfProcesses = noOfProcesses + 1
 			pid = int(m.group('pid'))
 			ppid = int(m.group('ppid'))
+			name = str(m.group('name'))
 			if pid in ps: 
 				if ps[pid].parent.name == ppid:
 					matches = matches + 1
@@ -78,7 +79,7 @@ def checkOutWithPs():
 				else:
 					pidWithWrongParent.append((pid,ppid))
 			else:
-				pidsThatDontExist.append(pid)
+				pidsThatDontExist.append((pid,name))
 
 	#append name to match info and ids 
 	for i in ps:
@@ -90,7 +91,7 @@ def checkOutWithPs():
 	with open('psout.json','w') as outfile:
 		outfile.write(exporter.export(root))
 
-	print "pids that pids that dont exist (always the insmod process that doest exist when calling ps command)"
+	print "pids that dont exist"
 	print pidsThatDontExist
 	print "pids with Wrong Parent"
 	print pidWithWrongParent
@@ -103,7 +104,6 @@ def checkOutWithPs():
 def main():
 	checkOutWithPs()
 	checkOutWithLinear()
-
 
 
 if __name__ == '__main__':
