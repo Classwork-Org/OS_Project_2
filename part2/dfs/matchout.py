@@ -1,6 +1,8 @@
 import re
 import pprint
 from anytree import Node, RenderTree
+from anytree.exporter import JsonExporter
+import json
 
 def checkOutWithLinear():
 	print("checking output with linear command output....")
@@ -37,13 +39,26 @@ def checkOutWithPs():
 	#ps is dictionary of reference to all nodes
 	#ps prevents having to search for node and for connecting children to parents (so heroic)
 	root = Node(0)
-	ps[0] = Node(0, parent = root)
+	ps[0] = Node(0, parent = root, psname = "root", m = 'True')
 	for eachLine in psOut:
-		m = re.match('^[a-zA-Z \+\-\_]+(?P<pid>[0-9]+) +(?P<ppid>[0-9]+)', eachLine)
+		m = re.match('^[a-zA-Z \+\-\_]+(?P<pid>[0-9]+) +(?P<ppid>[0-9]+) .* (?P<name>.+)', eachLine)
 		if m != None:
 			pid = int(m.group('pid'))
 			ppid = int(m.group('ppid'))
-			ps[pid] = Node(pid, parent = ps[ppid])
+			ps_name = str(m.group('name'))
+			#check if parent already exists, if it doesnt create it
+			if ppid not in ps:
+				ps[ppid] = Node(ppid)
+
+			#check if child already exists
+			#if it does connect it to parent
+			#if it doesnt, create it and connect it to parent
+			#parent node guaranteed to exist here
+			if pid in ps:
+				ps[pid].parent = ps[ppid]
+				ps[pid].psname = ps_name
+			else:
+				ps[pid] = Node(pid, parent = ps[ppid], psname = ps_name, m = "False")
 
 	#confirm relations
 	matches = 0
@@ -59,12 +74,22 @@ def checkOutWithPs():
 			if pid in ps: 
 				if ps[pid].parent.name == ppid:
 					matches = matches + 1
+					ps[pid].m = "True"
 				else:
-					pidWithWrongParent.append(pid)
+					pidWithWrongParent.append((pid,ppid))
 			else:
 				pidsThatDontExist.append(pid)
 
-	print(RenderTree(root))
+	#append name to match info and ids 
+	for i in ps:
+		ps[i].name = "name: \"" + ps[i].psname + "\", pid:" + str(ps[i].name) + ", m: " +\
+		ps[i].m
+
+	exporter = JsonExporter(indent = 2, sort_keys=True)
+	output = exporter.export(root)
+	with open('psout.json','w') as outfile:
+		outfile.write(exporter.export(root))
+
 	print "pids that pids that dont exist (always the insmod process that doest exist when calling ps command)"
 	print pidsThatDontExist
 	print "pids with Wrong Parent"

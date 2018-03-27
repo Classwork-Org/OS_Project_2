@@ -1,4 +1,4 @@
-rm -r -f tre/;
-pip uninstall virtualenv;
-apt-get remove python-pip;
+sudo rm -r -f tre/;
+sudo pip uninstall virtualenv;
+sudo apt-get remove python-pip;
 

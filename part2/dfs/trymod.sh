@@ -18,8 +18,8 @@ printf "4)removing module\n"
 rmmod dfs;
 printf "done\n\n"
 
-printf "5)kernal output:\n"
-dmesg;
+printf "5)kernal output (currently supressed because of visualization):\n"
+dmesg > /dev/null;
 printf "done\n\n"
 
 printf "6)redirecting outpus to files\n"
@@ -34,3 +34,7 @@ printf "done\n\n"
 printf "running match script\n";	
 ./tre/bin/python matchout.py;
 printf "trymod complete \n"
+
+printf "\n\nlaunching ps tree visualizer\n";
+sudo -u oscreader firefox tree.html > /dev/null 2>&1 &
+printf "thank you, enjoy the wicked visuals\n"
