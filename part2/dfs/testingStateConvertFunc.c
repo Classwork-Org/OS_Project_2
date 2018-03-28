@@ -1,11 +1,6 @@
-#include <linux/init.h>
-#include <linux/module.h>
-#include <linux/kernel.h>
-#include <linux/sched.h>
-#include <linux/list.h>
-#include <linux/slab.h>
-
-struct task_struct *task;
+#include <stdlib.h>
+#include <string.h>
+#include <stdio.h>
 
 char* convertStateToString(long state){
 	
@@ -17,7 +12,7 @@ char* convertStateToString(long state){
 		return "running";
 	}
 	else{
-		result = (char*)kmalloc(sizeof(char)*250, GFP_KERNEL);
+		result = (char*)malloc(sizeof(char)*250);
 	}
 
 	strcpy(result, "");
@@ -65,25 +60,8 @@ char* convertStateToString(long state){
 	return result;
 }
 
-int simple_init(void)
-{
-	printk(KERN_INFO "starting process tree print \n");
-	printk(KERN_INFO "pid: %d, parent_pid: %d, name: %s, state: %s", init_task.pid, init_task.real_parent->pid, init_task.comm, convertStateToString(init_task.state));
-	for_each_process(task){
-		printk(KERN_INFO "pid: %d, parent_pid: %d, name: %s, state: %s", task->pid, task->real_parent->pid, task->comm, convertStateToString(task->state));
-	}
-
+int main(){
+	char* result = convertStateToString(0);
+	printf("%s\n", result);
 	return 0;
 }
-
-void simple_exit(void)
-{
-	printk(KERN_INFO "removing module\n");
-}
-
-module_init(simple_init);
-module_exit(simple_exit);
-
-MODULE_LICENSE("GPL");
-MODULE_DESCRIPTION("Simple Module");
-MODULE_AUTHOR("SGG");

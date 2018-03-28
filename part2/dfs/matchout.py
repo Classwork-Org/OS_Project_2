@@ -19,7 +19,7 @@ def checkOutWithLinear():
 			if m.group('name') in linearModOut:
 				foundCount = foundCount + 1
 			else:
-				unmatchedLines.append(eachLine)
+				unmatchedLines.append(m.group('name'))
 
 	print("found " + str(foundCount) + " out of " + str(noOfProcesses) + " pids")
 	

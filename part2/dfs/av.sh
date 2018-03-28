@@ -1,1 +1,0 @@
-source ./tre/bin/activate
